@@ -1,0 +1,450 @@
+/*
+Theme Name: Portfolio
+Description: A custom, fully responsive WordPress theme designed and developed to provide a top-notch experience on all devices by HedgeKnight.
+Author: HedgeKnight
+Version: 1.0.0
+*/
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Universal
+--------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+input:focus {
+	outline: none;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+.main-wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.main-header {
+	background-color: #72b2c5;
+	height: 60vh;
+	padding: 20px 5%;
+}
+
+.page-heading-wrapper {
+	clear: both;
+	display: flex;
+	align-items: center;
+}
+
+.page-heading {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.page-heading h1,
+.page-heading h3 {
+	color: #fff;
+}
+
+/* Navigation */
+
+.toggle-sidebar {
+	width: 100px;
+	float: right;
+	vertical-align: center;
+	margin-top: 10px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+	width: 40px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.toggle-sidebar img {
+	vertical-align: middle;
+}
+
+.toggle-sidebar span {
+	display: inline-block;
+	color: #fff;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: width 0.5s;
+  text-align: right;
+  max-width: 450px;
+	transition: all 1s;
+}
+
+#sidebar ul {
+	padding: 0;
+	transition: all 1s;
+}
+
+/* The navigation menu links */
+#sidebar a {
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+#sidebar a:hover {
+	color: #acd0ce;
+}
+
+.sidenav li {
+  list-style: none;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: relative;
+  top: 10px;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  z-index: 3000;
+  display: inline-block;
+  text-align: right;
+  color: #818181;
+	height: 30px;
+	width: 30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#sidebar {
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.nav-up {
+  top: -140px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fade-in {
+	animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	50% {
+		opacity: 0;
+		transform: translateX(40px);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.fade-out {
+	animation: fadeOut 1s ease-in-out;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Main Content Area
+--------------------------------------------------------------*/
+
+.content-area {
+	padding: 40px 5%;
+}
+
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+
+.profile-image {
+	width: 200px;
+	position: relative;
+	top: -100px;
+	margin: 0 auto -100px;
+}
+
+#home-page main {
+	text-align: center;
+}
+
+.navigation-links {
+	margin-top: 60px;
+}
+
+.navigation-link {
+	display: inline-block;
+	background-color: #72b2c5;
+	width: 30%;
+	padding: 20px;
+	color: #fff;
+	border-radius: 10px;
+	margin: 0 1%;
+}
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body {
+	font-family: 'Cabin', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #666;
+}
+
+.content-area p {
+	font-size: 1.125em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #666;
+	margin-top: 10px;
+}
+
+body {
+  font-size: 100%;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
+}
