@@ -1,5 +1,21 @@
     <footer>
-
+      <div class="social-icons">
+        <div class="social-icon">
+          <a href="https://twitter.com/JosiahSchaefer">
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/twitter.svg" alt="twitter icon">
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://github.com/SilasOtoko">
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/github.svg" alt="github icon">
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/josiah.schaefer">
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/facebook.svg" alt="facebook icon">
+          </a>
+        </div>
+      </div>
     </footer>
 
     <script>

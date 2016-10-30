@@ -38,7 +38,7 @@
 			</nav>
 		</div>
 	</div>
-  <header class="subpage-header clearfix">
+  <header class="main-header clearfix">
 
 		<div onclick="openNav()" class="toggle-sidebar">
 			<img src="<?php bloginfo( 'template_directory' ); ?>/img/hamburger-menu.svg" alt="hamburger icon">
@@ -46,7 +46,8 @@
 
 		<div class="page-heading-wrapper">
 			<div class="page-heading">
-				<h1><?php the_title(); ?></h1>
+				<h1>Hello!</h1>
+				<h3>My name is Josiah Schaefer.</h3>
 			</div>
 		</div>
 

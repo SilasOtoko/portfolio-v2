@@ -1,7 +1,7 @@
-<?php get_header(); ?>
+<?php get_header( 'home' ); ?>
 
 <div class="profile-image">
-  <img src="<?php bloginfo( 'template_directory' ); ?>/img/profile.png" alt="Josiah Schaefer">
+  <img src="<?php bloginfo( 'template_directory' ); ?>/img/profile.jpg" alt="Josiah Schaefer">
 </div>
 
 <div id="home-page" class="content-area">
@@ -15,9 +15,36 @@
       I’m passionate about clean design, a good workflow, and learning new things!</p>
 
       <div class="navigation-links">
-        <a class="navigation-link" href="/work">My Work</a>
-        <a class="navigation-link" href="/about">About Me</a>
-        <a class="navigation-link" href="/contact">Contact Us</a>
+        <div class="flip">
+          <div class="card">
+            <div class="face front">
+              <a class="navigation-link" href="/work" ontouchstart="this.classList.toggle('hover');">My Work</a>
+            </div>
+            <div class="face back">
+              <a class="navigation-link" href="/work" ontouchstart="this.classList.toggle('hover');">My Work</a>
+            </div>
+          </div>
+        </div>
+        <div class="flip">
+          <div class="card">
+            <div class="face front">
+              <a class="navigation-link" href="/about" ontouchstart="this.classList.toggle('hover');">About Me</a>
+            </div>
+            <div class="face back">
+              <a class="navigation-link" href="/about" ontouchstart="this.classList.toggle('hover');">About Me</a>
+            </div>
+          </div>
+        </div>
+        <div class="flip">
+          <div class="card">
+            <div class="face front">
+              <a class="navigation-link" href="/contact" ontouchstart="this.classList.toggle('hover');">Contact Me</a>
+            </div>
+            <div class="face back">
+              <a class="navigation-link" href="/contact" ontouchstart="this.classList.toggle('hover');">Contact Me</a>
+            </div>
+          </div>
+        </div>
       </div>
 
     </main>

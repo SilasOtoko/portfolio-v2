@@ -106,15 +106,41 @@ input:focus {
 --------------------------------------------------------------*/
 
 .main-header {
-	background-color: #72b2c5;
+	background-color: #708090;
+	background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
 	height: 60vh;
 	padding: 20px 5%;
+}
+
+.subpage-header {
+	background-color: #708090;
+	background-image:
+	repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 70px 120px;
+	padding: 20px 5%;
+}
+
+.subpage-header .page-heading {
+	padding: 80px 0;
 }
 
 .page-heading-wrapper {
 	clear: both;
 	display: flex;
 	align-items: center;
+	height: 100%;
+}
+
+.main-header .page-heading {
+	margin-bottom: 40px;
 }
 
 .page-heading {
@@ -139,8 +165,10 @@ input:focus {
   -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
 	width: 40px;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 5px;
+	position: absolute;
+	right: 5%;
 }
 
 .toggle-sidebar img {
@@ -184,7 +212,7 @@ input:focus {
 }
 
 #sidebar a:hover {
-	color: #acd0ce;
+	color: #6d695c;
 }
 
 .sidenav li {
@@ -263,13 +291,25 @@ input:focus {
 # Footer
 --------------------------------------------------------------*/
 
+footer {
+	background-color: #eeeeee;
+	padding: 20px 5%;
+	text-align: center;
+}
+
+.social-icon {
+	width: 40px;
+	display: inline-block;
+	margin: 0 10px;
+}
+
 
 /*--------------------------------------------------------------
 # Main Content Area
 --------------------------------------------------------------*/
 
 .content-area {
-	padding: 40px 5%;
+	padding: 40px 5% 60px;
 }
 
 
@@ -282,6 +322,12 @@ input:focus {
 	position: relative;
 	top: -100px;
 	margin: 0 auto -100px;
+	border-radius: 10px;
+	border: 5px solid #fff;
+}
+
+.profile-image img {
+	border-radius: 10px;
 }
 
 #home-page main {
@@ -294,12 +340,93 @@ input:focus {
 
 .navigation-link {
 	display: inline-block;
-	background-color: #72b2c5;
+	width: 100%;
+	height: 100%;
+}
+
+.flip {
+  margin: 40px auto;
+  perspective: 1000px;
+	display: inline-block;
 	width: 30%;
-	padding: 20px;
-	color: #fff;
-	border-radius: 10px;
 	margin: 0 1%;
+	vertical-align: top;
+}
+
+.flip,
+.card {
+	height: 200px;
+}
+
+.flip:hover .card,
+.flip.hover .card {
+	transform: rotateY(180deg);
+	transition: all 600ms ease-out;
+}
+
+.card {
+  transition: all 1000ms ease-out;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  cursor: pointer;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+	display: flex;
+	display: -webkit-flex;
+  align-items: center;
+	-webkit-align-items: center;
+}
+
+.front {
+  background-color: #708090;
+  color: #fff;
+  z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.front .navigation-link {
+	color: #fff;
+}
+
+.back {
+  background-color: #b8c6d1;
+  transform: rotateY(-180deg);
+}
+
+.back .navigation-link {
+	color: #666;
+}
+
+
+/*--------------------------------------------------------------
+# Work Page
+--------------------------------------------------------------*/
+
+.project h3 {
+	display: inline-block;
+	border-bottom: 2px solid #708090;
+}
+
+.project-thumbnail {
+	width: 30%;
+	border-radius: 10px;
+}
+
+.project-thumbnail img {
+	border-radius: 10px;
 }
 
 
