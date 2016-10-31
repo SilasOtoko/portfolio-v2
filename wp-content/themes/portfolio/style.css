@@ -440,31 +440,62 @@ footer {
 # Work Page
 --------------------------------------------------------------*/
 
-.project h3 {
+.project-category {
+	text-align: left;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: left;
+  -webkit-justify-content: left;
+	margin-bottom: 40px;
+}
+
+.project-category-title {
+	padding: 0 2%;
+}
+
+.project-category-title h3 {
 	display: inline-block;
 	border-bottom: 2px solid #708090;
+	margin-bottom: 10px;
+}
+
+.project {
+	width: 46%;
+	display: inline-block;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+	padding: 10px 10px 20px;
+	margin: 2%;
+	border-radius: 5px;
+	vertical-align: top;
+	text-align: center;
 }
 
 .project-thumbnail {
 	display: inline-block;
-	width: 30%;
-	border-radius: 10px;
+	border-radius: 5px;
+	width: 100%;
 }
 
 .project-thumbnail img {
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .project-info {
 	display: inline-block;
-	width: 68%;
-	padding-left: 30px;
 	vertical-align: top;
 }
 
 .project-info h4 {
 	color: #708090;
 	margin-bottom: 10px;
+}
+
+.project .button {
+	width: 100%;
 }
 
 

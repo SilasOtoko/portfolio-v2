@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
        rowDivs = new Array(),
        $el,
        topPosition = 0;
-   $(container).each(function() {
+  $(container).each(function() {
 
      $el = $(this);
      $($el).height('auto')
@@ -33,13 +33,13 @@ jQuery(document).ready(function($){
   }
 
   $(window).load(function() {
-    equalheight('.flex-wrapper h3');
+    equalheight('.projects .project-info');
     equalheight('.navigation-links .navigation-link');
   });
 
 
-  $(window).resize(function(){
-    equalheight('.flex-wrapper h3');
+  $(window).resize(function() {
+    equalheight('.projects .project-info');
     equalheight('.navigation-links .navigation-link');
   });
 
