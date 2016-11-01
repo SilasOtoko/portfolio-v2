@@ -497,6 +497,12 @@ footer {
 	flex: 1 0 auto;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 1 auto;
+	margin-bottom: 20px;
+}
+
+.project-info strong {
+	font-size: 14px;
+	font-style: italic;
 }
 
 .project-info h4 {
@@ -506,6 +512,13 @@ footer {
 
 .project .button {
 	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.project {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
 
@@ -523,7 +536,7 @@ body {
 }
 
 .content-area p {
-	font-size: 1.125em;
+	font-size: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {

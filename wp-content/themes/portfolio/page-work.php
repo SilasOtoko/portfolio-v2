@@ -166,7 +166,6 @@
                 <h4>Reverie Class Cards</h4>
                 <p>I couldn’t decide how I wanted the class cards to look, so I made several versions and asked some friends for some input.</p>
               </div>
-              <a href="/artwork" class="button button-blue-gray">View More</a>
             </div>
           </div>
           <div class="project">
@@ -178,7 +177,6 @@
                 <h4>Totoro</h4>
                 <p>My Neighbor Totoro is one of my favorite movies, and I’ve wanted to try my hand at recreating Totoro in Illustrator ever since I started learning how to use it. I think it turned out pretty well!</p>
               </div>
-              <a href="/artwork" class="button button-blue-gray">View Work</a>
             </div>
           </div>
           <div class="project">
@@ -190,7 +188,6 @@
                 <h4>Reverie Logo</h4>
                 <p>Here are a couple early logo designs I made for the yarn shop. The client ended up going with just the letters for a cleaner look.</p>
               </div>
-              <a href="/artwork" class="button button-blue-gray">View Work</a>
             </div>
           </div>
           <div class="project">
@@ -202,7 +199,6 @@
                 <h4>Bike Magik Logo</h4>
                 <p>My first attempt at a fully custom logo. It’s a little rough but I’m still proud of it.</p>
               </div>
-              <a href="/artwork" class="button button-blue-gray">View Work</a>
             </div>
           </div>
           <div class="project">
@@ -214,7 +210,6 @@
                 <h4>Pokedex Design Concept</h4>
                 <p>I wanted to make something fun to practice a Mobile First Design approach. </p>
               </div>
-              <a href="/artwork" class="button button-blue-gray">View Work</a>
             </div>
           </div>
           <div class="project">
@@ -226,7 +221,6 @@
                 <h4>Adventure Beyond Logo</h4>
                 <p>This is a logo for a made up company I’m using to create an example website with. </p>
               </div>
-              <a href="/artwork" class="button button-blue-gray">View Work</a>
             </div>
           </div>
           <div class="project">
@@ -235,10 +229,9 @@
                 <img src="<?php bloginfo( 'template_directory' ); ?>/img/adventurebeyond.jpg" alt="Adventure Beyond Prototype">
               </div>
               <div class="project-info">
-                <h4>Adventure Beyond Prototype</h4>
+                <h4>Adventure Beyond Prototype (In progress)</h4>
                 <p>My first Prototype made using Adobe XD. I’m planning on turning this into a couple different websites later on. One to show a more custom design solution, the other to show a more generic template look to contrast the two.</p>
               </div>
-              <a href="/artwork" class="button button-blue-gray">View Work</a>
             </div>
           </div>
         </div>
