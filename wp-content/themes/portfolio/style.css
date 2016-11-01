@@ -133,7 +133,7 @@ input:focus {
 	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
 	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
 	background-size: 70px 120px;
-	height: 50vh;
+	height: 50vmax;
 	padding: 20px 5%;
 }
 
@@ -433,6 +433,35 @@ footer {
 
 .back .navigation-link {
 	color: #666;
+}
+
+@media (max-width: 767px) {
+	.flip {
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+	.flip,
+	.card {
+		height: 100px;
+	}
+
+	.flip:hover .card,
+	.flip.hover .card {
+		transform: rotateX(180deg);
+	}
+
+	.navigation-link {
+		line-height: 100px;
+	}
+
+	.front {
+		transform: rotateX(0deg);
+	}
+
+	.back {
+		transform: rotateX(-180deg);
+	}
 }
 
 
