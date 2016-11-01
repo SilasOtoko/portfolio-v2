@@ -78,7 +78,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -98,6 +98,11 @@ input:focus {
 
 .main-wrapper {
 	max-width: 980px;
+	margin: 0 auto;
+}
+
+.medium-wrapper {
+	max-width: 700px;
 	margin: 0 auto;
 }
 
@@ -133,7 +138,7 @@ input:focus {
 	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
 	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
 	background-size: 70px 120px;
-	height: 50vmax;
+	height: 50vh;
 	padding: 20px 5%;
 }
 
@@ -306,6 +311,12 @@ input:focus {
 	animation: fadeOut 1s ease-in-out;
 }
 
+@media (max-width: 767px) {
+	.main-header {
+		height: 50vmax;
+	}
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -356,6 +367,10 @@ footer {
 
 #home-page main {
 	text-align: center;
+}
+
+.main-paragraph {
+	font-size: 1.125em;
 }
 
 .navigation-links {
@@ -550,6 +565,46 @@ footer {
 	}
 }
 
+/*--------------------------------------------------------------
+# About Me
+--------------------------------------------------------------*/
+
+.content-image {
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Contact Me
+--------------------------------------------------------------*/
+
+.contact-page {
+	text-align: center;
+}
+
+.contact-form {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto 40px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.contact-form .wpcf7-form {
+	text-align: left;
+}
+
+.contact-form .form-group {
+	margin-bottom: 10px;
+}
+
+.wpcf7-form input,
+.wpcf7-form textarea {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
 
 /*--------------------------------------------------------------
 # Typography
@@ -562,10 +617,6 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #666;
-}
-
-.content-area p {
-	font-size: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {

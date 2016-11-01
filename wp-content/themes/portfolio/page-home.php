@@ -8,7 +8,7 @@
   <div class="main-wrapper">
     <main>
 
-      <p>I’m a web developer living in Indianapolis with my wife and two kids, soon to be three!
+      <p class="main-paragraph">I’m a web developer living in Indianapolis with my wife and two kids, soon to be three!
 
       I’ve been designing and developing websites for 3 years now, mostly WordPress sites, with a little bit of Ruby on Rails thrown in there to keep it interesting.
 

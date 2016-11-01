@@ -21,7 +21,7 @@
 		<div id="sidebar">
 			<nav>
 				<div class="mobile-navigation">
-					<h4>Main</h4>
+					<h4>Menu</h4>
 					<?php
 
 						$defaults = array(
