@@ -33,13 +33,13 @@ jQuery(document).ready(function($){
   }
 
   $(window).load(function() {
-    equalheight('.projects .project-info');
+    equalheight('.projects .flexbox-wrapper');
     equalheight('.navigation-links .navigation-link');
   });
 
 
   $(window).resize(function() {
-    equalheight('.projects .project-info');
+    equalheight('.projects .flexbox-wrapper');
     equalheight('.navigation-links .navigation-link');
   });
 

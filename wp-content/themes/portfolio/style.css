@@ -474,6 +474,13 @@ footer {
 	text-align: center;
 }
 
+.flexbox-wrapper {
+	display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
 .project-thumbnail {
 	display: inline-block;
 	border-radius: 5px;
@@ -487,6 +494,9 @@ footer {
 .project-info {
 	display: inline-block;
 	vertical-align: top;
+	flex: 1 0 auto;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 1 auto;
 }
 
 .project-info h4 {
