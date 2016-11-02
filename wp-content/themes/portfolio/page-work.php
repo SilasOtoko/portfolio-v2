@@ -79,7 +79,7 @@
                 <p>In this website I tried to pay attention to matching the website colors with the business. The greenish color on the website is the same green as the front of the building. I took the main photo myself and touched up the paint job on the building in Photoshop.</p>
                 <p><strong>(I no longer have access to this site as it was built while employeed at a past company, so please ignore the little quirks in design that you may see. They bug me too.)</strong></p>
               </div>
-              <a href="/wordpress-websites" class="button button-blue-gray">View More</a>
+              <a href="http://www.centertitle.com/" class="button button-blue-gray">View More</a>
             </div>
           </div>
           <div class="project">
@@ -92,7 +92,7 @@
                 <p>This one was interesting for me. I had spent many hours on this site, hours of my personal time outside of work as well, trying to get it just right. I had expected the guy to love it, but I learned a hard lesson: Just because it looks nice, doesn’t mean it is what the client wants. Turns out it pays to figure out what the client is looking for BEFORE building the website. He loved the logo I made for the site, though! He made it his official logo and even put it on a sign in front of his business. It is the one on the site, in the top left there. It was my first attempt at a logo. Yeah, that felt good.</p>
                 <p><strong>(I no longer have access to this site as it was built while employeed at a past company, so please ignore the little quirks in design that you may see. They bug me too.)</strong></p>
               </div>
-              <a href="/wordpress-websites" class="button button-blue-gray">View More</a>
+              <a href="http://michael4insurance.com/" class="button button-blue-gray">View More</a>
             </div>
           </div>
           <div class="project">
