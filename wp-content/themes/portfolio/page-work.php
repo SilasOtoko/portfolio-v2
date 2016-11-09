@@ -66,7 +66,7 @@
                 <h4>Reverie</h4>
                 <p>My latest WordPress site and my first attempt at an ecommerce site. I went for a clean design/material design mix with this one, although it was the typeface choice that really pulled it off.</p>
               </div>
-              <a href="http://josiahschaefer.com/reverie/" class="button button-blue-gray">View Project</a>
+              <a href="http://josiahschaeferswork.com/reverie/" class="button button-blue-gray">View Project</a>
             </div>
           </div>
           <div class="project">
