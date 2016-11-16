@@ -11,7 +11,7 @@
     <main>
 
       <div class="project-category-title">
-        <h3>Artwork</h3>
+        <h3>Artwork/Small Projects</h3>
       </div>
       <div class="project-category">
         <div class="project">
@@ -23,6 +23,18 @@
               <h4>Reverie Class Cards</h4>
               <p>I couldn’t decide how I wanted the class cards to look, so I made several versions and asked some friends for some input.</p>
             </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="flexbox-wrapper">
+            <div class="project-thumbnail">
+              <img src="<?php bloginfo( 'template_directory' ); ?>/img/woodstockarc.jpg" alt="Woodstock ARC">
+            </div>
+            <div class="project-info">
+              <h4>The Button Game</h4>
+              <p>I made this simple game for my 3-year-old son, mostly to see if I could make him something that he would enjoy. He seems to love it and calls it, "The Button Game."</p>
+            </div>
+            <a href="http://codepen.io/SilasOtoko/full/MbymmP/" class="button button-blue-gray">View Project</a>
           </div>
         </div>
         <div class="project">
