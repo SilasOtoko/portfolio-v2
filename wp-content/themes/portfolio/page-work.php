@@ -28,7 +28,7 @@
         <div class="project">
           <div class="flexbox-wrapper">
             <div class="project-thumbnail">
-              <img src="<?php bloginfo( 'template_directory' ); ?>/img/woodstockarc.jpg" alt="Woodstock ARC">
+              <img src="<?php bloginfo( 'template_directory' ); ?>/img/button-game.jpg" alt="The Button Game">
             </div>
             <div class="project-info">
               <h4>The Button Game</h4>
